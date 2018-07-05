@@ -1,6 +1,7 @@
 package models
 
 type Priority int
+
 const (
 	High   Priority = 0
 	Medium Priority = 1
@@ -9,15 +10,14 @@ const (
 
 type Check struct {
 	Description string ``
-	Done bool ``
+	Done        bool   ``
 }
 
 type CheckList struct {
-
 }
 
 type SubTask struct {
-	ID int `db:"id"`
+	ID     int `db:"id"`
 	TaskID int `db:"task_id"`
 
 	Title       string `db:"title"`

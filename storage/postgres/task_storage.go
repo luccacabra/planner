@@ -1,8 +1,8 @@
 package postgres
 
 import (
-	"luccacabra/planner/storage/models"
 	"luccacabra/planner/storage"
+	"luccacabra/planner/storage/models"
 
 	"github.com/jinzhu/gorm"
 )
@@ -17,6 +17,6 @@ func TaskStorage(conn *gorm.DB) storage.TaskStorage {
 	}
 }
 
-func (t *taskStorage)GetOne(task models.Task) error {
+func (t *taskStorage) GetOne(task models.Task) error {
 	return nil
 }

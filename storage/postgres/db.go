@@ -24,30 +24,3 @@ func DBInit() (*storage.Storage, error) {
 	s.Tasks = (TaskStorage)(db)
 	return s, nil
 }
-
-//func (d *DB) Get(holder interface{}, query string, args ...interface{}) ([]interface{}, error) {
-//	return d.dbMap.Select(holder, query, args)
-//}
-//
-//func (d *DB) GetOne(holder interface{}, query string, args ...interface{}) error {
-//	if err := d.dbMap.SelectOne(holder, query, args...); err != nil {
-//		return err
-//	}
-//
-//	return nil
-//}
-//
-//func (d *DB) Insert(holders ...interface{}) error {
-//	if err := d.dbMap.Insert(holders...); err != nil {
-//		return err
-//	}
-//	return nil
-//}
-//
-//func (d *DB) Update(holders ...interface{}) (int64, error) {
-//	count, err := d.dbMap.Update(holders...)
-//	if err != nil {
-//		return 0, err
-//	}
-//	return count, nil
-//}

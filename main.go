@@ -5,12 +5,12 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gopkg.in/alecthomas/kingpin.v2"
 	"github.com/spf13/viper"
+	"gopkg.in/alecthomas/kingpin.v2"
 )
 
 var (
-	configFile = kingpin.Flag("config.file", "ECR exporter configuration file.").Default("prometheus-to-datadog.yaml").String()
+	configFile = kingpin.Flag("config.file", "Planner configuration file.").Default("planner.yaml").String()
 )
 
 func main() {
